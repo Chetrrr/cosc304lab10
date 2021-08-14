@@ -12,12 +12,12 @@
     <title>Administrator Page</title>
     <style>
         html{
-                background-color: #ffffff;
+                background-color: #edeee1;
         }
         head, body{
                 width: 90%;
                 margin: 0 5% 0 5%;
-                background-color: #ffffff;
+                background-color: #bdf5b8;
         }
         </style>
 
