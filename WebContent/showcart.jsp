@@ -19,9 +19,9 @@
 	}
         </style>
 </head>
-<body>
+<body> 
 
-<%
+<% 
 // Get the current list of products
 @SuppressWarnings({"unchecked"})
 HashMap<String, ArrayList<Object>> productList = (HashMap<String, ArrayList<Object>>) session.getAttribute("productList");

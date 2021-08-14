@@ -18,7 +18,7 @@
 %>
 
 
-<%!
+<%! 
 	String validateLogin(JspWriter out,HttpServletRequest request, HttpSession session) throws IOException
 	{
 		String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";

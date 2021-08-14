@@ -22,7 +22,7 @@
 }
 </style>
 </head>
-<body>
+<body> 
 
 <%@ include file="header.jsp" %>
 

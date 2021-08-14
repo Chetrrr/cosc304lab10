@@ -15,7 +15,7 @@
 		background-color: #ffffff;
 	}
 </style>
-</head>
+</head> 
 <body>
 
 <%@ include file="header.jsp" %>
