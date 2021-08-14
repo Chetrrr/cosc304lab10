@@ -16,6 +16,10 @@
 		margin: 0 5% 0 5%;
 		background-color: #bdf5b8;
 	}
+	img {
+  max-width: 400;
+  height: auto;
+}
 </style>
 </head>
 <body>
