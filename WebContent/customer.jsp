@@ -4,24 +4,25 @@
 <title>Customer Page</title>
 <style>
 	html{
-			background-color: #edeee1;
+			background-color: #ffffff;
 	}
 	head, body{
 			width: 90%;
 			margin: 0 5% 0 5%;
-			background-color: #bdf5b8;
+			background-color: #ffffff;
 	}
 	</style>
-	<%@ include file="header.jsp" %>
+
 </head>
 <body>
-
  
 <%@ include file="auth.jsp"%>
 <%@ page import="java.text.NumberFormat" %>
 <%@ include file="jdbc.jsp" %>
 
-
+<%
+	String userName = (String) session.getAttribute("authenticatedUser");
+%>
 
 <%
 
