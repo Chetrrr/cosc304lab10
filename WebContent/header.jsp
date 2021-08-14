@@ -50,7 +50,7 @@
          border-left-style: hidden;
           border-bottom-style: hidden;
           border: 0px;
-         height : 49px;
+ 
          position: relative;
          top:-16px;
         }
@@ -63,8 +63,7 @@
         a { color: #444444;  text-decoration:none;  font-family: monospace;}
 .valign{
     white-space: normal;
-    vertical-align:middle;
-    position: relative;
+    
          top:-16px;
 }
         h2{
@@ -77,7 +76,8 @@
             background-color: rgb(65, 65, 65);
         }
         .search_bar input[type="text"]{
-        position:relative;  
+        position:relative;      
+        height : 50px;
         display: inline;
         width:30%;
     </style>
@@ -107,7 +107,7 @@
         <img src="img\\search.jpg" alt="searchme" height="45" >
         </button>
         &nbsp;&nbsp;
-    <img class="valign" src="img\\user.jpg" alt="user icon" height="45">
+    <img class="valign" src="img\\user.jpg" alt="user icon" height="45" >
 
 
 <a class="valign" href="login.jsp">Login</a>&nbsp;

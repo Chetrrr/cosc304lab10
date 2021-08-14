@@ -16,15 +16,29 @@
 		margin: 0 5% 0 5%;
 		background-color: #ffffff;
 	}
-	img {
-  max-width: 400;
-  height: auto;
+	.imageFix{
+     max-width:400px;
+     height:auto;
+	 
+ }
+ .search_bar input[type="text"]{
+        position:relative;  
+        display: inline;
+        width:30%;
+		top:5px;
+ }
+ .valign{
+         top:10px;
+}
+input[type=text] {
+	height : 49px;
 }
 </style>
+<%@ include file="header.jsp" %>
 </head>
 <body> 
 
-<%@ include file="header.jsp" %>
+
 
 <%
 // Get product name to search for
@@ -43,9 +57,11 @@ try{
 			
 	if (rst.next())
 	{
-        out.println("<tr><th>Id: </th><td>" + productId +  "</td></tr>");				
+
+		out.print("<br><tr><img src=\"img\\" + productId + ".jpg\"></tr>");    
+
+		    out.println("<tr><th>Id: </th><td>" + productId +  "</td></tr>");				
 	    out.println("<br><tr><th>Price: </th><td>"  + currFormat.format(rst.getDouble(2)) + "</td></tr>");
-		out.print("<br><tr><img src=\"img\\" + productId + ".jpg\"></tr>");
 	}
         // TODO: Retrieve any image stored directly in database. Note: Call displayImage.jsp with product id as parameter.
 		out.println("<img src=\"displayImage.jsp?id=" + productId + "\">");
