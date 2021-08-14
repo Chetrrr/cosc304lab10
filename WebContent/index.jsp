@@ -115,12 +115,7 @@ img {vertical-align: middle;}
                         }
                         </script>
 
-<%
-// TODO: Display user name that is logged in (or nothing if not logged in)
-String userName = (String) session.getAttribute("authenticatedUser");
-	if (userName != null)
-		out.println("<h3 align=\"center\">Logged in as:  "+userName+"</h3>");	
-%>
+
 </body>
 </head>
 
