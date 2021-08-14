@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
         <title>GME Main Page</title>
+  
         <style>
                 html{
                         background-color: #ffffff;
@@ -12,20 +15,17 @@
                         background-color: #ffffff;
                 }
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+                * {box-sizing: border-box;}
+                body {font-family: Verdana, sans-serif;}
+                .mySlides {display: none;}
+            
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-
-
+                /* Slideshow container */
+                .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                 margin: auto;
+                }
 
 /* The dots/bullets/indicators */
 .dot {
@@ -59,22 +59,25 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-      </style>   
-                     <%@ include file="header.jsp" %>
+div {
+    text-align: center;
+  }
+</style>   
+<%@ include file="header.jsp" %>
 </head>
 <body>
+        
         <div class="slideshow-container">
 
                 <div class="mySlides fade">
                 
-                  <img src="img\\1.jpg" style="width:100%">
+                  <img src="img\\1.jpg" style="width:50%;" >
               
                 </div>
                 
                 <div class="mySlides fade">
               
-                  <img src="img\\2.jpg" style="width:100%">
+                  <img src="img\\2.jpg" style="width:40%">
                
                 </div>
                 
@@ -111,11 +114,11 @@ img {vertical-align: middle;}
                           }
                           slides[slideIndex-1].style.display = "block";  
                           dots[slideIndex-1].className += " active";
-                          setTimeout(showSlides, 5000); // Change image every 2 seconds
+                          setTimeout(showSlides, 6000); // Change image every X seconds
                         }
-                        </script>
+                 </script>
 
 </body>
-</head>
+
 
 
