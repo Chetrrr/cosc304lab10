@@ -10,6 +10,7 @@
 <style>
 	html{
 		background-color: #edeee1;
+		font-family: "Lucida Sans", sans-serif;
 	}
 	head, body{
 		width: 90%;
@@ -31,7 +32,7 @@
 // TODO: Retrieve and display info for the product
 String productId = request.getParameter("id");
 
-String sql = "SELECT productImageURL, productPrice ,productImage FROM product WHERE productId = ?";
+String sql = "SELECT productImageURL, productPrice , productDesc FROM product WHERE productId = ?";
 NumberFormat currFormat = NumberFormat.getCurrencyInstance();
 
 // TODO: If there is a productImageURL, display using IMG tag
@@ -49,6 +50,7 @@ try{
 	}
         // TODO: Retrieve any image stored directly in database. Note: Call displayImage.jsp with product id as parameter.
 		out.println("<img src=\"displayImage.jsp?id=" + productId + "\">");
+		out.println("<br><tr><th>Description: </th><td>" + rst.getString(3) + "</td></tr>");
 				
         // TODO: Add links to Add to Cart and Continue Shopping
         PreparedStatement pstmt2 = con.prepareStatement("SELECT productName, productPrice FROM product WHERE productId = ?");
