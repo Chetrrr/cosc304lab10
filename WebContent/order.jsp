@@ -16,7 +16,7 @@
 <title>GME Grocery Order Processing</title>
 <style>
 	html{
-		background-color: #edeee1;
+		background-color: #ffffff;
 	}
 	head, body{
 		width: 90%;

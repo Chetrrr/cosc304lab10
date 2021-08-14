@@ -10,7 +10,7 @@
 <title>Your Shopping Cart</title>
 <style>
 	html{
-		background-color: #edeee1;
+		background-color: #ffffff;
 	}
 	head, body{
 		width: 90%;

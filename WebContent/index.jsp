@@ -4,7 +4,7 @@
         <title>GME Main Page</title>
         <style>
                 html{
-                        background-color: #edeee1;
+                        background-color: #ffffff;
                 }
                 head, body{
                         width: 90%;
@@ -14,17 +14,11 @@
                 </style>
 </head>
 <body>
-<h1 align="center">Welcome to GME</h1>
+        <%@ include file="header.jsp" %>
+
 
 <h2 align="center"><a href="login.jsp">Login</a></h2>
 
-<h2 align="center"><a href="listprod.jsp">Begin Shopping</a></h2>
-
-<h2 align="center"><a href="listorder.jsp">List All Orders</a></h2>
-
-<h2 align="center"><a href="customer.jsp">Customer Info</a></h2>
-
-<h2 align="center"><a href="admin.jsp">Administrators</a></h2>
 
 <h2 align="center"><a href="logout.jsp">Log out</a></h2>
 

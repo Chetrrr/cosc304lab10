@@ -7,7 +7,7 @@
 <title>GME Grocery</title>
 <style>
 	html{
-		background-color: #edeee1;
+		background-color: #ffffff;
 	}
 	head, body{
 		width: 90%;
@@ -17,6 +17,8 @@
 </style>
 </head>
 <body>
+
+<%@ include file="header.jsp" %>
 
 <h1>Search for the products you want to buy:</h1>
 
