@@ -11,21 +11,14 @@
     <head>
     <title>Administrator Page</title>
     <style>
-               
-                html{
-                        background-color: #edeee1;
-                }
-                head, body{
-                        width: 100%;
-                        margin: 0% 0%;
-                        background-color: #ffffff;
-                }
-                .table {
-                    margin: auto;
-                
-
-                }
-
+        html{
+                background-color: #ffffff;
+        }
+        head, body{
+                width: 90%;
+                margin: 0 5% 0 5%;
+                background-color: #ffffff;
+        }
         </style>
  
     </head>
@@ -34,10 +27,11 @@
     <%@ include file="../auth.jsp"%>
     <%@ page import="java.text.NumberFormat" %>
     <%@ include file="jdbc.jsp" %>
-    <%@ include file="header.jsp" %>
-    <%@ page import="java.util.Locale" %>
     
-    <div class ="table">
+    <%
+        String userName = (String) session.getAttribute("authenticatedUser");
+    %>
+    
     <%
     
     // Print out total order amount by day

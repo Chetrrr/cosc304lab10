@@ -7,7 +7,7 @@
   
         <style>
                 html{
-                        background-color: #edeee1;
+                        background-color: #ffffff;
                 }
                 head, body{
                         width: 100%;
@@ -117,7 +117,6 @@ div {
                           setTimeout(showSlides, 6000); // Change image every X seconds
                         }
                  </script>
-
 
 </body>
 

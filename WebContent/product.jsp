@@ -9,13 +9,12 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 	html{
-		background-color: #edeee1;
-		font-family: "Lucida Sans", sans-serif;
+		background-color: #ffffff;
 	}
 	head, body{
 		width: 90%;
 		margin: 0 5% 0 5%;
-		background-color: #bdf5b8;
+		background-color: #ffffff;
 	}
 	.imageFix{
      max-width:400px;
@@ -34,6 +33,11 @@
 input[type=text] {
 	height : 49px;
 }
+
+a:hover, a:active {
+  background-color: rgb(255, 223, 223);
+  text-decoration: none;
+}
 </style>
 <%@ include file="header.jsp" %>
 </head>
@@ -46,7 +50,7 @@ input[type=text] {
 // TODO: Retrieve and display info for the product
 String productId = request.getParameter("id");
 
-String sql = "SELECT productImageURL, productPrice , productDesc FROM product WHERE productId = ?";
+String sql = "SELECT productImageURL, productPrice ,productImage FROM product WHERE productId = ?";
 NumberFormat currFormat = NumberFormat.getCurrencyInstance();
 
 // TODO: If there is a productImageURL, display using IMG tag
@@ -63,10 +67,10 @@ try{
 
 		    out.println("<tr><th>Id: </th><td>" + productId +  "</td></tr>");				
 	    out.println("<br><tr><th>Price: </th><td>"  + currFormat.format(rst.getDouble(2)) + "</td></tr>");
+
 	}
         // TODO: Retrieve any image stored directly in database. Note: Call displayImage.jsp with product id as parameter.
 		out.println("<img src=\"displayImage.jsp?id=" + productId + "\">");
-		out.println("<br><tr><th>Description: </th><td>" + rst.getString(3) + "</td></tr>");
 				
         // TODO: Add links to Add to Cart and Continue Shopping
         PreparedStatement pstmt2 = con.prepareStatement("SELECT productName, productPrice FROM product WHERE productId = ?");
@@ -78,8 +82,8 @@ try{
 		{
 	    productName = rst2.getString(1);
 	    price = rst2.getString(2);
-	    out.println("<br><h2><a href=\"addcart.jsp?id=" + productId + "&name=" + productName + "&price=" + price + "\">Add to Cart</a>");
-        out.println("<h2><a href=\"listprod.jsp\">Continue Shopping</a>");
+	    out.println("<br><h1><a href=\"addcart.jsp?id=" + productId + "&name=" + productName + "&price=" + price + "\">Add to Cart</a>");
+        out.println("<h1><a href=\"listprod.jsp\">Continue Shopping</a>");
 		}
 } 
 catch (SQLException ex) {

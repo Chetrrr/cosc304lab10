@@ -12,12 +12,12 @@
 <title>GME Grocery Shipment Processing</title>
 <style>
 	html{
-			background-color: #edeee1;
+			background-color: #ffffff;
 	}
 	head, body{
 			width: 90%;
 			margin: 0 5% 0 5%;
-			background-color: #bdf5b8;
+			background-color: #ffffff;
 	}
 	</style>
 </head> 
