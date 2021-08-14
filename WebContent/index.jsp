@@ -14,7 +14,7 @@
                 </style>
 </head>
 <body>
-<h1 align="center">Welcome to GME</h1>
+<%@ include file="header.jsp" %>
 
 <h2 align="center"><a href="login.jsp">Login</a></h2>
 

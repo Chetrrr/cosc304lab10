@@ -24,7 +24,7 @@
 String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
 String uid = "SA";
 String pw = "YourStrong@Passw0rd";
-
+<%@ include file="header.jsp" %>
 //Note: Forces loading of SQL Server driver
 try
 {	// Load driver class
