@@ -7,11 +7,12 @@
                         background-color: #edeee1;
                 }
                 head, body{
-                        width: 90%;
-                        margin: 0 5% 0 5%;
-                        background-color: #bdf5b8;
-                }
-                </style>
+                        width: 100%;
+                        margin: 0% 0%;
+                        background-color: #ffffff;
+                } 
+                </style>   
+                     <%@ include file="header.jsp" %>
 </head>
 <body>
 <%@ include file="header.jsp" %>

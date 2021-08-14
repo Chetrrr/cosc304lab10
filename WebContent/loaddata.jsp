@@ -39,7 +39,7 @@ try
     // Read commands separated by ;
     scanner.useDelimiter(";");
     while (scanner.hasNext())
-    {
+    { 
         String command = scanner.next();
         if (command.trim().equals(""))
             continue;

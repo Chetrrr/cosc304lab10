@@ -17,7 +17,7 @@ String id = request.getParameter("id");
 String qty = request.getParameter("qty");
 
 out.println("ID: "+id);
-
+ 
 // Update quantity for product selected
 if (productList.containsKey(id)) 
 { // find item in shopping cart

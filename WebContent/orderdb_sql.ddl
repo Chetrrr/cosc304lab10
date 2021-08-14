@@ -25,7 +25,7 @@ CREATE TABLE customer (
     userid              VARCHAR(20),
     password            VARCHAR(30),
     PRIMARY KEY (customerId)
-);
+); 
 
 CREATE TABLE paymentmethod (
     paymentMethodId     INT IDENTITY,

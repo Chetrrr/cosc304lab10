@@ -17,7 +17,7 @@ catch(Exception e)
 {	out.println("Invalid image id: "+id+" Error: "+e);
 	return; 
 }
-
+ 
 // TODO: Modify SQL to retrieve productImage given productId
 String sql = "SELECT productImage FROM product WHERE productId = ?";
 

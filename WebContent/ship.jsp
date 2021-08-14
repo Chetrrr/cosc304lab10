@@ -20,7 +20,7 @@
 			background-color: #bdf5b8;
 	}
 	</style>
-</head>
+</head> 
 <body>
         
 <%@ include file="header.jsp" %>

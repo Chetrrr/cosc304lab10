@@ -16,7 +16,7 @@ Public methods:
 	String url ="jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
 	String uid = "SA";
 	String pw = "YourStrong@Passw0rd";
-
+ 
 	// Connection
 	private Connection con = null;
 %>

@@ -20,10 +20,10 @@
                 background-color: #bdf5b8;
         }
         </style>
-
+ 
     </head>
     <body>
-    
+     
     <%@ include file="../auth.jsp"%>
     <%@ page import="java.text.NumberFormat" %>
     <%@ include file="jdbc.jsp" %>

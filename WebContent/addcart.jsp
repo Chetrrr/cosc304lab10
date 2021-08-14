@@ -9,7 +9,7 @@ if (productList == null)
 {	// No products currently in list.  Create a list.
 	productList = new HashMap<String, ArrayList<Object>>();
 }
-
+ 
 // Add new product selected
 // Get product information
 String id = request.getParameter("id");
