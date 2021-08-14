@@ -1,6 +1,8 @@
 <%@ page import="java.sql.*,java.net.URLEncoder" %>
 <%@ page import="java.text.NumberFormat" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF8"%>
+<%@ page import="java.util.Locale" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,7 +67,8 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 	}
 	out.println("<h2>All Products</h2>");
 	out.println("<table><tr><th></th><th>Product Name</th><th>Price</th></tr>");
-	NumberFormat currFormat = NumberFormat.getCurrencyInstance();
+		Locale locale = new Locale("en","US");
+		NumberFormat currFormat = NumberFormat.getCurrencyInstance(locale);
 		
 		while (rst.next()) 
 		{

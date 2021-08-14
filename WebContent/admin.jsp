@@ -11,14 +11,21 @@
     <head>
     <title>Administrator Page</title>
     <style>
-        html{
-                background-color: #edeee1;
-        }
-        head, body{
-                width: 90%;
-                margin: 0 5% 0 5%;
-                background-color: #bdf5b8;
-        }
+               
+                html{
+                        background-color: #edeee1;
+                }
+                head, body{
+                        width: 100%;
+                        margin: 0% 0%;
+                        background-color: #ffffff;
+                }
+                .table {
+                    margin: auto;
+                
+
+                }
+
         </style>
  
     </head>
@@ -28,18 +35,19 @@
     <%@ page import="java.text.NumberFormat" %>
     <%@ include file="jdbc.jsp" %>
     <%@ include file="header.jsp" %>
+    <%@ page import="java.util.Locale" %>
     
-    
+    <div class ="table">
     <%
     
     // Print out total order amount by day
     String sql = "select year(orderDate), month(orderDate), day(orderDate), SUM(totalAmount) FROM OrderSummary GROUP BY year(orderDate), month(orderDate), day(orderDate)";
-    
-    NumberFormat currFormat = NumberFormat.getCurrencyInstance();
+    Locale locale = new Locale("en","US");
+		NumberFormat currFormat = NumberFormat.getCurrencyInstance(locale);
     
     try 
     {	
-        out.println("<h3>Daily Sales Report </h3>");
+        out.println("<h3 text-align:center>Daily Sales Report </h3>");
         
         getConnection();
         ResultSet rst = con.createStatement().executeQuery(sql);		
@@ -60,6 +68,6 @@
         closeConnection();	
     }
     %>
-    
+    </div>
     </body>
     </html>

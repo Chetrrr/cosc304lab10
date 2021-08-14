@@ -4,6 +4,7 @@
 <%@ page import="java.text.NumberFormat" %>
 <%@ page import="java.util.Map" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF8"%>
+<%@ page import="java.util.Locale" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +33,8 @@ if (productList == null)
 }
 else
 {
-	NumberFormat currFormat = NumberFormat.getCurrencyInstance();
+	Locale locale = new Locale("en","US");
+		NumberFormat currFormat = NumberFormat.getCurrencyInstance(locale);
 
 	out.println("<h1>Your Shopping Cart</h1>");
 	out.print("<table><tr><th>Product Id</th><th>Product Name</th><th>Quantity</th>");
