@@ -50,18 +50,20 @@
          border-left-style: hidden;
           border-bottom-style: hidden;
           border: 0px;
-         height : 49px;
+ 
          position: relative;
          top:-16px;
         }
-
+        button[type=submit]{
+          border: 0px;
+          height:50px;
+        }
         a:visited { color: #444444; text-decoration:none;}
         a:hover { color: #ec1e1e;}
         a { color: #444444;  text-decoration:none;  font-family: monospace;}
 .valign{
     white-space: normal;
-    vertical-align:middle;
-    position: relative;
+    
          top:-16px;
 }
         h2{
@@ -73,6 +75,11 @@
             color: #f6f6f6;
             background-color: rgb(65, 65, 65);
         }
+        .search_bar input[type="text"]{
+        position:relative;      
+        height : 50px;
+        display: inline;
+        width:30%;
     </style>
 
 <h2>
@@ -80,8 +87,10 @@
 </h2>
 <H1 align="center">    
 
-<form method="get" action="listprod.jsp" style="display:inline">
-    <div class="dropdown">
+
+    <div class="search_bar">
+      <form method="get" action="listprod.jsp">
+       <div class="dropdown">
         <button class="dropbtn"><img src="img\\menu.jpg" alt="menu menu" height="45"></button>
         <div class="dropdown-content">
           <a href="listprod.jsp">Shop Now</a>
@@ -91,16 +100,14 @@
         </div>
         </div>
         &nbsp;&nbsp;
-
+ 
     <a href="index.jsp"><img src="img\\logo.jpg" alt="GME Logo" height="45"></a>
-    &nbsp;&nbsp;
-    
-    <input type="text" name="productName" placeholder="  Search Here Now!" size="70" height="45"><button type="submit" style="border: 0;" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="productName" placeholder="  Search Here Now!" size="70" height="45"><button type="submit" >
         <img src="img\\search.jpg" alt="searchme" height="45" >
-    </button>
-    </form>
-    &nbsp;&nbsp;
-    <img class="valign" src="img\\user.jpg" alt="user icon" height="45">
+        </button>
+        &nbsp;&nbsp;
+    <img class="valign" src="img\\user.jpg" alt="user icon" height="45" >
 
 
 <a class="valign" href="login.jsp">Login</a>&nbsp;
@@ -108,6 +115,9 @@
 
 &nbsp;&nbsp;
 <a href="addcart.jsp"><img src="img\\cart.jpg" alt="vroom" height="45"></a>
+    </div>
+    </form>
+
 
 
 
@@ -119,4 +129,3 @@ String userName = (String) session.getAttribute("authenticatedUser");
 	if (userName != null)
 		out.println("<h3 align=\"right\">Logged in as:  "+userName+"  &nbsp; </h3>");	
 %>
-
