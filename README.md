@@ -10,5 +10,6 @@ GME will provide users with a user-friendly online store that is both aesthetica
 Customers and users alike will also be able to leave reviews and ratings for stocked products and by doing so will benefit us and give us insight by utilizing this feedback to overcome new trends and various needs of our customers.
 
 **Please look at the GME_Summary.docx** 
-for thhe list of all the features
+
+for the list of all the features
 
