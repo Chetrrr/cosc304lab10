@@ -1,6 +1,7 @@
 # COSC 304 Summer 2021 Lab 10: Project Completion
 
 Final Project Deliverable
+GME 
 
 ## Mission Statement:
 Our mission is to provide the community with readily available gaming peripherals and eSports related merchandise. Our goal is for this service to be user friendly and intuitive. For gamers by gamers.
