@@ -13,3 +13,10 @@ Customers and users alike will also be able to leave reviews and ratings for sto
 
 for the list of all the features
 
+
+**Made by:**
+Nathan Jacinto - Third Year Computer Science Student at UBC Okanagan
+Chester Ng
+Zach Prenovast
+
+
