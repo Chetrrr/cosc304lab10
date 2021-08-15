@@ -2,7 +2,7 @@
 <%@ page import="java.text.NumberFormat" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF8"%>
 <%@ include file="jdbc.jsp" %>
-
+<%@ page import="java.util.Locale" %>
 <html>
 <head>
 <title>GME Grocery - Product Information</title>
@@ -17,9 +17,10 @@
 		background-color: #ffffff;
 	}
 	.imageFix{
+		
      max-width:400px;
      height:auto;
-	 
+		
  }
  .search_bar input[type="text"]{
         position:relative;  
@@ -43,15 +44,16 @@ a:hover, a:active {
 </head>
 <body> 
 
-
+	
 
 <%
 // Get product name to search for
 // TODO: Retrieve and display info for the product
 String productId = request.getParameter("id");
 
-String sql = "SELECT productImageURL, productPrice ,productImage FROM product WHERE productId = ?";
-NumberFormat currFormat = NumberFormat.getCurrencyInstance();
+String sql = "SELECT productImageURL, productPrice ,productImage, productDesc, productName FROM product WHERE productId = ?";
+Locale locale = new Locale("en","US");
+NumberFormat currFormat = NumberFormat.getCurrencyInstance(locale);
 
 // TODO: If there is a productImageURL, display using IMG tag
 try{
@@ -62,15 +64,17 @@ try{
 			
 	if (rst.next())
 	{
+		out.print("<h1>"+ rst.getString(5)+ "</h1>");
+		out.print("<br><tr><img src=\"img\\" + productId + ".jpg\" width=700px height=auto></tr></div>");  
+		//out.println("<br><img src=\"displayImage.jsp?id=" + productId + "\" width=10px height=auto>");
 
-		out.print("<br><tr><img src=\"img\\" + productId + ".jpg\"></tr>");    
-
-		    out.println("<tr><th>Id: </th><td>" + productId +  "</td></tr>");				
+		out.println("<br><tr><th>Id: </th><td>" + productId +  "</td></tr>");				
 	    out.println("<br><tr><th>Price: </th><td>"  + currFormat.format(rst.getDouble(2)) + "</td></tr>");
+		out.println("<br><tr><th>Description: </th></tr><tr><td>" + rst.getString(4) + "</td></tr>");
 
 	}
         // TODO: Retrieve any image stored directly in database. Note: Call displayImage.jsp with product id as parameter.
-		out.println("<img src=\"displayImage.jsp?id=" + productId + "\">");
+		
 				
         // TODO: Add links to Add to Cart and Continue Shopping
         PreparedStatement pstmt2 = con.prepareStatement("SELECT productName, productPrice FROM product WHERE productId = ?");
@@ -82,8 +86,8 @@ try{
 		{
 	    productName = rst2.getString(1);
 	    price = rst2.getString(2);
-	    out.println("<br><h1><a href=\"addcart.jsp?id=" + productId + "&name=" + productName + "&price=" + price + "\">Add to Cart</a>");
-        out.println("<h1><a href=\"listprod.jsp\">Continue Shopping</a>");
+	    out.println("<br><h1><a href=\"addcart.jsp?id=" + productId + "&name=" + productName + "&price=" + price + "\">Add to Cart</a></h1>");
+        out.println("<h1><a href=\"listprod.jsp\">Continue Shopping</a></h1>");
 		}
 } 
 catch (SQLException ex) {

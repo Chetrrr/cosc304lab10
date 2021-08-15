@@ -83,7 +83,7 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 			quantity += rst2.getInt(2);
 		}
 		out.print("</table>");
-		out.println("<table class=\"table\" border=\"0\" cellspacing=\"15\"><tr><td><td></td><td>Total Quantity: " + quantity + "</td><td> Total Price:" + total + "</td></tr></table></td></tr>");
+		out.println("<table class=\"table\" border=\"0\" cellspacing=\"15\"><tr><td><td></td><td>Total Quantity: " + quantity + "</td><td> Total Price: " + total + "</td></tr></table></td></tr>");
 	}
 	
 // Close connection

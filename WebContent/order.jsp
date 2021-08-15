@@ -149,11 +149,19 @@ try(Connection con = DriverManager.getConnection(url, uid, pw);Statement stmt = 
 				i = productList.entrySet().iterator();
 				while (i.hasNext())
 				{
+					
 					Map.Entry<String, ArrayList<Object>> entry = i.next();
 						ArrayList<Object> product = (ArrayList<Object>) entry.getValue();
 						String productId = (String) product.get(0);
 						String price = (String) product.get(2);
-						double pr = Double.parseDouble(price);
+							
+						if (Double.parseDouble(price).equals(null)){
+						double pr=0;
+					}
+						else{
+							double pr = Double.parseDouble(price);
+						}
+
 						int qty = ( (Integer)product.get(3)).intValue();
 						
 						//input += "INSERT INTO orderproduct (orderId, productId, quantity, price) VALUES (@orderId, "+productId+","+qty+","+pr + ");";
