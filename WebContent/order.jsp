@@ -157,7 +157,7 @@ try(Connection con = DriverManager.getConnection(url, uid, pw);Statement stmt = 
 							
 						
 						
-							double pr = Double.parseDouble(price);
+						double pr = Double.parseDouble(price);
 						
 
 						int qty = ( (Integer)product.get(3)).intValue();
