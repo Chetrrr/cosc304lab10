@@ -66,7 +66,8 @@ div {
 <%@ include file="header.jsp" %>
 </head>
 <body>
-        
+  </br></br></br></br></br>
+  <h1 align="center" style="color:rgb(235, 21, 21)">Hot and Trending!</h1>
         <div class="slideshow-container">
 
                 <div class="mySlides fade">
