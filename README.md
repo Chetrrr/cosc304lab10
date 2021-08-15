@@ -20,6 +20,6 @@ Nathan Jacinto - Third Year Computer Science Student at UBC Okanagan
 
 Chester Ng
 
-Zach Prenovast
+Zach Prenovost
 
 
