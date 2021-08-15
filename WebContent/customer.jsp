@@ -12,7 +12,7 @@
 			background-color: #ffffff;
 	}
 	</style>
-
+<%@ include file="header.jsp" %>
 </head>
 <body>
  
@@ -20,9 +20,7 @@
 <%@ page import="java.text.NumberFormat" %>
 <%@ include file="jdbc.jsp" %>
 
-<%
-	String userName = (String) session.getAttribute("authenticatedUser");
-%>
+
 
 <%
 

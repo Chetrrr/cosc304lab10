@@ -20,17 +20,16 @@
                 background-color: #ffffff;
         }
         </style>
- 
+ <%@ include file="header.jsp" %>
     </head>
     <body>
      
     <%@ include file="../auth.jsp"%>
     <%@ page import="java.text.NumberFormat" %>
     <%@ include file="jdbc.jsp" %>
+    <%@ page import="java.util.Locale" %>
     
-    <%
-        String userName = (String) session.getAttribute("authenticatedUser");
-    %>
+   
     
     <%
     
