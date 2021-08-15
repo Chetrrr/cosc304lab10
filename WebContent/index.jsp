@@ -71,19 +71,19 @@ div {
         <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                  <a href=\"product.jsp?id=1\">
+                  <a href=\"http://localhost/shop/product.jsp?id=1">
                   <img src="img\\1.jpg" style="width:50%;" >
                 </a>
                 </div>
                 
                 <div class="mySlides fade">
-                  <a href=\"product.jsp?id=1\">
+                  <a href=\"http://localhost/shop/product.jsp?id=2">
                   <img src="img\\2.jpg" style="width:40%">
                 </a>
                 </div>
                 
                 <div class="mySlides fade">
-                  <a href=\"product.jsp?id=1\">
+                  <a href=\"http://localhost/shop/product.jsp?id=3">
                   <img src="img\\3.jpg" style="width:100%">
         </a>
                 </div>
