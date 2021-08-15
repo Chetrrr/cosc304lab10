@@ -24,7 +24,7 @@
 		background-color: #ffffff;
 	}
         </style>
-
+<%@ include file="header.jsp" %>
 </head> 
 <body>
 
@@ -181,7 +181,7 @@ try(Connection con = DriverManager.getConnection(url, uid, pw);Statement stmt = 
 		out.println("<h2><a href=\"shop.html\">Back to Shopping</a></h2>");
 	}
 	else if(productList.isEmpty() || productList == null){
-		out.println("<h2>Please go back to shopping</h2></br><h2><a href=\"shop.html\">Back to shopping</a></h2>");
+		out.println("<h2>Please go back to shopping</h2></br><h1><a href=\"shop.html\">Back to shopping</a></h1>");
 	}
 
 }

@@ -86,7 +86,7 @@ else
 	out.println("<tr><td colspan=\"4\" align=\"right\"><b>Order Total</b></td>"
 			+"<td align=\"right\">"+currFormat.format(total)+"</td></tr>");
 	out.println("</table>");
-
+	out.println("<h1><a href=\"clearcart.jsp\">Clear Cart</a></h1>");
 	out.println("<h1><a href=\"checkout.jsp\">Check Out</a></h1>");
 	
 }
