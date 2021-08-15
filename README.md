@@ -13,6 +13,8 @@ Customers and users alike will also be able to leave reviews and ratings for sto
 
 for the list of all the features
 
+**Please load in the data by entering: http://localhost/shop/loaddata.jsp into your website browser **
+
 
 **Made by:**
 
