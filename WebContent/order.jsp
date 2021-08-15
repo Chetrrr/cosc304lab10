@@ -24,7 +24,7 @@
 		background-color: #ffffff;
 	}
         </style>
-
+<%@ include file="header.jsp" %>
 </head> 
 <body>
 
@@ -155,12 +155,10 @@ try(Connection con = DriverManager.getConnection(url, uid, pw);Statement stmt = 
 						String productId = (String) product.get(0);
 						String price = (String) product.get(2);
 							
-						if (Double.parseDouble(price).equals(null)){
-						double pr=0;
-					}
-						else{
-							double pr = Double.parseDouble(price);
-						}
+						
+						
+						double pr = Double.parseDouble(price);
+						
 
 						int qty = ( (Integer)product.get(3)).intValue();
 						
@@ -180,10 +178,10 @@ try(Connection con = DriverManager.getConnection(url, uid, pw);Statement stmt = 
 
 // Clear cart if order placed successfully
 		productList.clear();
-		out.println("<h2><a href=\"shop.html\">Back to Shopping</a></h2>");
+		out.println("<h1><a href=\"shop.html\">Back to Shopping</a></h1>");
 	}
 	else if(productList.isEmpty() || productList == null){
-		out.println("<h2>Please go back to shopping</h2></br><h2><a href=\"shop.html\">Back to shopping</a></h2>");
+		out.println("<h2>Please go back to shopping</h2></br><h1><a href=\"shop.html\">Back to shopping</a></h1>");
 	}
 
 }

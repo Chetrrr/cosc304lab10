@@ -19,6 +19,7 @@
 		background-color: #ffffff;
 	}
         </style>
+		<%@ include file="header.jsp" %>
 </head>
 <body> 
 
@@ -85,11 +86,13 @@ else
 	out.println("<tr><td colspan=\"4\" align=\"right\"><b>Order Total</b></td>"
 			+"<td align=\"right\">"+currFormat.format(total)+"</td></tr>");
 	out.println("</table>");
-
-	out.println("<h2><a href=\"checkout.jsp\">Check Out</a></h2>");
+	out.println("<h1><a href=\"clearcart.jsp\">Clear Cart</a></h1>");
+	out.println("<h1><a href=\"checkout.jsp\">Check Out</a></h1>");
+	
 }
 %>
-<h2><a href="listprod.jsp">Continue Shopping</a></h2>
+<h1><a href="listprod.jsp">Continue Shopping</a></h1>
+
 </body>
 </html> 
 

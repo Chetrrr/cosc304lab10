@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Ray's Grocery</title>
+<%@ include file="header.jsp" %>
 </head>
 <body>
 
