@@ -9,7 +9,7 @@ Our mission is to provide the community with readily available gaming peripheral
  ## Executive Summary:
 GME will provide users with a user-friendly online store that is both aesthetically pleasing and easy to use. To meet our customer’s requirements as well as satisfy the increasing demand of this growing market we will offer global shipping for a variety of eSports related merchandise as well as gaming marketed gear
 
-**Please look at the GME_Summary_Final.docx** 
+**Please look at the GME_Summary_Final.pdf** 
 
 for the list of all the features
 
